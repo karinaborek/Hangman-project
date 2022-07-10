@@ -1,7 +1,9 @@
 from urllib import request
-
+from display_hangman import display_hangman
+from functions_hangman import get_word
 
 class Player:
+
     def __init__(self):
         pass
     def request_for_name(self):
@@ -12,6 +14,8 @@ class Player:
                 return name
             else:
                 print('enter a new name')
+
+
     def request_for_difficulty(self):
         while True:
             difficulty = input('select the difficulty level(easy, medium or hard): ')
