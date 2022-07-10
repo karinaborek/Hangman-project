@@ -1,9 +1,13 @@
 import random
 from display_hangman import display_hangman
 from functions_hangman import *
-
+from player import *
 
 def play(word):
+    player_one = Player()
+    player_two = Player()
+    player_one.request_for_name()
+    player_two.request_for_name()
     word_completion = "_" * len(word)
     guessed = False
     guessed_letters = []

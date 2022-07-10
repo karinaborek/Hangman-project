@@ -18,7 +18,12 @@ class Player:
             confirm = input(f'type "yes" to confirm your choice({difficulty}): ')
             if confirm == 'yes':
                 if difficulty == 'easy' or difficulty == 'medium' or difficulty == 'hard':
-                    return difficulty
+                    if difficulty == 'easy':
+                        return 6
+                    elif difficulty == 'medium':
+                        return 5
+                    elif difficulty == 'hard':
+                        return 4
                 else:
                     print('enter the correct difficulty')
     pass
